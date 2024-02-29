@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to my website!" />
+    <title>Skypro 2077</title>
+    <link
+      rel="shortcut icon"
+      href="img/icon-cyberpunk.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="title">Добро пожаловать на мой сайт !</h1>
+        <p class="subtitle">
+          Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+          <b>поехали</b> и <b>приступай</b>
+        </p>
+        <a class="play-btn" href="#">Поехали!</a>
+      </div>
+    </header>
+
+    <main class="game-content">
+      <div class="container">
+        <section class="game">
+          <a class="game__item game__first" href="#"> Игра 1 </a>
+          <a class="game__item game__second" href="#"> Игра 2 </a>
+          <a class="game__item game__third" href="#"> Игра 3 </a>
+        </section>
+      </div>
+    </main>
+
+    <section class="seasons-game">
+      <div class="container">
+        <div class="about-seasons-game">
+          <div class="game-info">
+            <h2 class="game-info__title">Времена года!</h2>
+            <p class="game-info__desc">
+              Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы
+              узнаете к какому времени года он относится
+            </p>
+            <a class="play-btn" onclick="playSeasonsGame()" href="#">Играть!</a>
+          </div>
+          <img
+            class="about-seasons-game__picture"
+            src="./img/seasons-game-img.png"
+            alt="seasons"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="remember-game">
+      <div class="container">
+        <div class="about-remember-game">
+          <div class="game-info">
+            <h2 class="game-info__title">Запомни слова</h2>
+            <p class="game-info__desc">
+              При нажатии на кнопку играть, вы увидите несколько слов, которые
+              вам необходимо запомнить.
+            </p>
+            <a class="play-btn" onclick="rememberWords()" href="#">Играть!</a>
+          </div>
+          <img
+            class="about-remember-game__picture"
+            src="./img/remember-game-img.png"
+            alt="seasons"
+          />
+        </div>
+      </div>
+    </section>
+
+    <script src="./JS/hw-2.7.js"></script>
+  </body>
+</html>
