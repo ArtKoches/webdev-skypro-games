@@ -18,8 +18,18 @@ function isMale(person) {
 }
 
 function filter(arr, ruleFunction) {
-  return arr.filter(ruleFunction);
+  const emptyArray = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (ruleFunction(arr[i])) {
+      emptyArray.push(arr[i]);
+    }
+  }
+
+  return emptyArray;
 }
+
+// return arr.filter(ruleFunction);
 
 console.log(filter([3, -4, 1, 9], isPositive));
 
@@ -34,14 +44,13 @@ console.log(filter(people2, isMale));
 
 //homework3
 function getDateTimer() {
-  let currDay = new Date();
-
-  const timeInterval = setInterval(() => {
+  const timerId = setInterval(() => {
+    let currDay = new Date();
     console.log(currDay);
   }, 3000);
 
   setTimeout(() => {
-    clearInterval(timeInterval);
+    clearInterval(timerId);
     console.log("30 секунд прошло");
   }, 30000);
 }
